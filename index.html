@@ -4,13 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Area Calculator.css"
+    <link rel="stylesheet" href="./style.css">
     <title>Area Calculator</title>
 </head>
 <body>
     <h1>Area Calculator</h1>
-    <p>Welcome to Area Calculator, please select a shape and enter your variables to begin</p>
+    <p class="description">Welcome to Area Calculator, please select a shape and enter your variables to begin</p>
 
-    <script src="./Area Calculator.js"></script>
+    
+    <select name="selectShape" id="selectShape">
+        <option value="square">Square</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="circle">Circle</option>
+        <option value="triangle">Triangle</option>
+    </select>
+
+    <form>
+        <label for="length">Length:</label><br>
+        <input type="number" id="length" name="length"><br>
+        <label for="Width">Width:</label><br>
+        <input type="number" id="width" name="width">
+    </form>
+    <br>
+    <button id=calculate>Calculate</button>
+
+    <div>
+    <h2 id="ans">2</h2>
+    <h2>m2</h2>
+    </div>
+
+    <script src="./areaCalculator.js"></script>
 </body>
 </html>
+
